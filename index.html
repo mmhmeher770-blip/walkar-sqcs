@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQCS - Smart Quality Control System</title>
+    <meta name="description" content="Smart Quality Control System for Walker Footwear. Digitalize quality inspection workflows, AQL standards, defect percentage calculation, and daily production reports.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile-header {
+            background: linear-gradient(135deg, #1b365d, #2c4d75);
+            padding: 25px 20px;
+            border-radius: 12px 12px 0 0;
+            color: white;
+            margin: -25px -25px 20px -25px;
+        }
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-bottom: 10px;
+            background-color: #ddd;
+        }
+        .profile-header h1 {
+            font-size: 22px;
+            margin: 5px 0;
+            letter-spacing: 1px;
+        }
+        .profile-header p {
+            font-size: 12px;
+            margin: 0;
+            opacity: 0.9;
+        }
+        .features-list {
+            text-align: left;
+            margin: 15px 0 25px 0;
+            font-size: 13px;
+            color: #333;
+        }
+        .features-list div {
+            margin-bottom: 6px;
+        }
+        .brand-logo {
+            font-weight: bold;
+            color: #003366;
+            font-size: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .login-btn {
+            background: linear-gradient(135deg, #f39c12, #d35400);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="profile-header">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Profile" class="profile-img">
+            <h1>SQCS</h1>
+            <p>Smart Quality Control System</p>
+            <p style="font-size: 11px; margin-top: 4px;">Quality inspection workflows, AQL standards, defect analysis, and daily SQCS reports for Walker Footwear.</p>
+        </div>
+        
+        <div class="features-list">
+            <div>✓ Real-time Inspections</div>
+            <div>✓ Data Analytics</div>
+            <div>✓ Inline & End-line</div>
+            <div>✓ Corrective Actions</div>
+        </div>
+
+        <div class="brand-logo">WALKAR FOOTWEAR</div>
+
+        <form action="notice.html" method="GET">
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" required placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" required placeholder="Enter password">
+            </div>
+            <button type="submit" class="login-btn">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
