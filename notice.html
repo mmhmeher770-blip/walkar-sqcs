@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQCS - Notice Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+        }
+        .user-id {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .notice-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 1px solid #e1e8ed;
+        }
+        .notice-title {
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #f1f1f1;
+            background-color: #fafbfc;
+        }
+        .notice-body {
+            padding: 15px 20px;
+        }
+        .notice-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .notice-text {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .urgent-card {
+            background: #fff;
+            border-left: 5px solid #e74c3c;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-size: 14px;
+            color: #c0392b;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>SQCS</h2>
+        <div class="user-id">👤 ID: 5199121</div>
+    </div>
+
+    <div class="container">
+        <!-- Daily Quality Focus Notice -->
+        <div class="notice-card">
+            <div class="notice-title">Daily Quality Focus: Shoe Part Inspection</div>
+            <div class="notice-body">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Shoe Parts" class="notice-img">
+                <p class="notice-text">
+                    <strong>Today's focus:</strong> Correct stitching alignment on the Toe Cap. Ensure no glue residue on the Outsole. Refer to AQL standard 2.5.
+                </p>
+            </div>
+        </div>
+
+        <!-- Urgent Notice -->
+        <div class="urgent-card">
+            <strong>Urgent:</strong> New AQL standards for EVA foam density effective from Monday. All QC leads must attend the briefing.
+        </div>
+    </div>
+
+</body>
+</html>
